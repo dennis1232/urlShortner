@@ -103,7 +103,3 @@ The MongoDB database stores the following information:
 ### 6. **Deployment Strategy**
 
 - **Docker-Based Deployment**: The app is containerized using Docker, making it easy to deploy on any platform that supports Docker, such as **AWS**, **Google Cloud**, or **Azure**.
-
-### 7. **Error Handling**
-
-- **Error Handling**: The server provides useful error messages and status codes (e.g., `404` for not found, `500` for server errors), so users know what’s happening with their requests.
