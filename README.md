@@ -31,9 +31,13 @@ npm install
 ### 3. Set up environment variables
 
 MONGO_URI=mongodb://localhost:27017/urlShortener
+
 TEST_MONGO_URI=mongodb://localhost:27017/urlShortenerTest
+
 BASE_URL=http://localhost:5001
+
 CLIENT_BASE_URL=http://localhost:3000
+
 PORT=5001
 
 ### 4. Start the server
