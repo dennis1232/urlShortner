@@ -21,14 +21,20 @@ Before you begin, make sure you have the following installed:
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/your-username/url-shortener-server.git
 cd url-shortener-server
+```
 
 ### 2. Install dependencies
 
+```bash
 npm install
+```
 
 ### 3. Set up environment variables
+
+```bash
 
 MONGO_URI=mongodb://localhost:27017/urlShortener
 
@@ -39,25 +45,33 @@ BASE_URL=http://localhost:5001
 CLIENT_BASE_URL=http://localhost:3000
 
 PORT=5001
+```
 
 ### 4. Start the server
 
+```bash
 npm start
+```
 
 ### 5. Run the server with Docker (Optional)
 
+```bash
+
 docker build -t url-shortener-server .
 docker run -p 3000:3000 --env-file .env url-shortener-server
+```
 
 ### 6. Run the Tests
 
+```bash
 npm test
+```
 
 ## **Server-Side Architecture and Design Choices**
 
 ### 1. **Overview**
 
-The backend of the URL Shortener app is built using **Node.js** and **Express**. It’s responsible for generating short URLs, handling redirections, and managing URL data using **MongoDB**. Everything is containerized with **Docker**, ensuring a consistent setup across environments and making deployment easy.
+The backend of the URL Shortener app is built using **Node.js** and **Express**. It’s responsible for generating short URLs, handling redirecting, and managing URL data using **MongoDB**. Everything is containerized with **Docker**, ensuring a consistent setup across environments and making deployment easy.
 
 ### 2. **Tech Stack**
 
