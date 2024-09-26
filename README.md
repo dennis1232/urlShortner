@@ -88,7 +88,8 @@ The MongoDB database stores the following information:
 - **shortUrl**: The shortened version of the URL (composed of the base URL and the short code).
 - **urlCode**: The unique identifier (short code) used to access the short URL.
 - **createdAt**: The timestamp when the URL was created.
-- **expiresAt**: (Optional) The expiration date, after which the short URL is no longer valid.
+- **expiresAt**: The expiration date, after which the short URL is no longer valid.
+- **clicks**: The number of times the shortened version of the URL were clicked
 
 ### 5. **Scalability and Performance**
 
@@ -103,8 +104,6 @@ The MongoDB database stores the following information:
 
 - **Docker-Based Deployment**: The app is containerized using Docker, making it easy to deploy on any platform that supports Docker, such as **AWS**, **Google Cloud**, or **Azure**.
 
-### 7. **Security and Error Handling**
+### 7. **Error Handling**
 
-- **Input Validation**: All URLs submitted by users are validated to ensure they are safe and valid, helping to prevent security issues.
-- **HTTPS**: The server should run over HTTPS to ensure secure communication between clients and the backend.
 - **Error Handling**: The server provides useful error messages and status codes (e.g., `404` for not found, `500` for server errors), so users know what’s happening with their requests.
